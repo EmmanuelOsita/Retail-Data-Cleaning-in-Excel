@@ -19,7 +19,7 @@
 
 I opened the dataset and had to skim through the file to observe:
 
-![image](https://github.com/user-attachments/assets/4362b007-a5c9-4d76-8692-1cbd04228caf)
+![image](https://github.com/user-attachments/assets/54c558c6-fb3d-4253-9468-86de4ecd2068)
 
 * Duplicates
 * Irregular date formats
@@ -81,7 +81,8 @@ To do that I used =VALUE(SUBSTITUTE(E2, "$", ""))
 Using the Filter and Search tool, I noticed that some of the customers had no email input in the email column. So I had to use the formula to flag the blank data
 =IF(ISBLANK(B2), "Missing", B2) for emails
 
-![image](https://github.com/user-attachments/assets/5aedd8e0-25d6-4bef-927b-c8be67c5401b)
+![image](https://github.com/user-attachments/assets/17f460ce-483a-4280-a782-c52b33bb954f)
+
 
 *Applying this “Flagged missing emails with ‘Missing’ label for visibility* 
 
@@ -91,11 +92,13 @@ Rename headers clearly (e.g., “Customer Name” → “Full Name”)
 Saved file as: clean_retail_cleaned_1,000.xlsx
 
 ## Key Improvements Delivered
+
+![image](https://github.com/user-attachments/assets/8d59a312-e4ac-4514-9427-2df3a86a929e)
+
 * Eliminated 11 duplicates transactions ($250 in value)
 * Corrected 150 mis-formated dates enabling time-series analysis
 * Reduced manual cleaning time by 90% (from 5hours to 30minutes)
 * Automated future imports with Power Query templates
 
-![Uploading image.png…]()
 
 **Result: Produced a clean, analysis-ready dataset suitable for business intelligence, sales tracking, and reporting.**
